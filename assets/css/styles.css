@@ -6,12 +6,19 @@ html {
     font-size: 1em;
 }
 
-.container {
+body {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
 }
 
-section#about {
-    background-color: aqua;
+.container {
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    width: 100%;
+    background-color: #f4f4f4;
 }
 
 .nav {
@@ -19,36 +26,57 @@ section#about {
     flex-direction: row;
     width: 100%;
     height: 64px;
-    background-color: black;
-}
-
-#nav_contact {
-    width: 50%;
-    justify-content: flex-end;
-    padding-right: 0.75rem;
-}
-
-#nav_directory {
-    width: 50%;
-    padding-left: 0.75rem;
-}
-
-#nav_contact,
-#nav_directory {
-    display: flex;
-    flex-direction: row;
-    align-items: center
+    border-bottom: 4px solid #373737;
+    background-color: #f4f4f4;
 }
 
 .nav_item {
-    align-items: center;
     padding: 0.5rem 0.75rem;
-    color: white;
+    color: #373737;
+}
+
+.nav_item:hover {
+    color: #c0b2b3;
+}
+
+.tab_current {
+    background-color: #373737;
+    color: #dcd0c0;
+}
+
+.avatar {
+    padding: 5%;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    padding: 10% 0;
+    width: 100%;
+    height: 3rem;
+}
+
+.social {
+    display: flex;
+    height: 100%;
+    padding: 0.5rem 0.75rem;
+    color: #373737;
+}
+
+.social:hover {
+    color: #c0b2b3;
+}
+
+.social span {
+    font-size: 2rem;
 }
 
 .column {
     display: flex;
     flex-direction: column;
+    padding: 16px;
 }
 
 .row {
@@ -56,13 +84,33 @@ section#about {
     width: 100%;
 }
 
-.row#about_row {
+.row#home .column {
+    flex-basis: 50%;
+}
+
+.c_centered {
+    align-items: center;
+}
+
+.m_centered {
     justify-content: center;
+}
+
+h1#my_name {
+    text-align: center;
+}
+
+.textbox {
+    display: flex;
+}
+
+.textbox.about_desc {
+    flex-direction: column;
     align-items: center;
 }
 
 @media only screen and (max-width: 600px) {
-    .row#about_row {
+    .row#home {
         flex-direction: column;
     }
 }
