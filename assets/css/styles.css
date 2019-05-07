@@ -41,6 +41,7 @@ body {
     flex-direction: row;
     width: 100%;
     height: 64px;
+    min-height: 50px;
     border-bottom: 4px solid #373737;
     background-color: #f4f4f4;
 }
@@ -119,13 +120,12 @@ body {
     justify-content: center;
 }
 
-p.first_name,
-p.last_name {
+p.name {
     height: 100%;
     font-size: 2rem;
 }
 
-p.last_name {
+span.color_text {
     color: #756739;
 }
 
@@ -133,13 +133,19 @@ p.last_name {
     display: flex;
 }
 
-.textbox.about_desc {
+.textbox.bio {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding-bottom: 64px;
 }
 
 @media only screen and (max-width: 600px) {
     .row#home {
         flex-direction: column;
+    }
+    .avatar {
+        width: 200px;
     }
 }
