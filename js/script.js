@@ -35,27 +35,27 @@ async function playSound() {
 
 
     intro.play();
-    await delay(3500).then(() => console.log('ran after 3.5 seconds passed'));
+    await delay(3300).then(() => console.log('ran after 3.5 seconds passed'));
     
     playNumber(thousands);
-    await delay(900).then(() => console.log('ran after 1 second passed'));
+    await delay(800).then(() => console.log('ran after 1 second passed'));
     thousandsAudio.play();
-    await delay(900).then(() => console.log('ran after 1 second passed'));
+    await delay(1000).then(() => console.log('ran after 1 second passed'));
     if (hundreds > 0) {
         playNumber(hundreds);
-        await delay(900).then(() => console.log('ran after 1 second passed'));
+        await delay(800).then(() => console.log('ran after 1 second passed'));
         hundredsAudio.play();
-        await delay(900).then(() => console.log('ran after 1 second passed'));
+        await delay(1000).then(() => console.log('ran after 1 second passed'));
     }
     if (tens > 0) {
         playNumber(tens);
-        await delay(900).then(() => console.log('ran after 1 second passed'));
+        await delay(800).then(() => console.log('ran after 1 second passed'));
         tensAudio.play();
-        await delay(900).then(() => console.log('ran after 1 second passed'));
+        await delay(1000).then(() => console.log('ran after 1 second passed'));
     }
     if (ones > 0) {
         playNumber(ones);
-        await delay(900).then(() => console.log('ran after 1 second passed'));
+        await delay(800).then(() => console.log('ran after 1 second passed'));
     }
     outro.play();
 
